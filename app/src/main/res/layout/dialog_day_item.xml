@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="30dp"
+    android:layout_height="45dp"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/day_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_dayview_text_bg"
+        >
+
+        <TextView
+            android:id="@+id/myDay"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textSize="@dimen/t_16"
+            android:textColor="@color/black"
+            tools:text="0" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/myDay"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="9sp"
+            android:text=""
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunyou.icloudinn.bookhouse.Ui.SlidingButtonView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@android:color/white"
+    android:layout_marginBottom="1dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/book_delete"
+        android:layout_height="match_parent"
+        android:layout_width="80dp"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/layout_content"
+        android:text="删 除"
+        android:background="@drawable/btn_click_red_havebackground"
+        android:textColor="#DDFFFFFF"
+        />
+
+    <RelativeLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        >
+        <ImageView
+            android:id="@+id/item_house_collect_picture"
+            android:layout_width="145dp"
+            android:layout_height="110dp" />
+        <TextView
+            android:id="@+id/item_house_collect_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="浪漫公主主题房"
+            android:textColor="@color/black"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/item_house_collect_picture"
+            android:layout_marginStart="10dp"
+            />
+        <TextView
+            android:id="@+id/item_house_collect_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥550"
+            android:textColor="@color/red"
+            android:layout_below="@+id/item_house_collect_name"
+            android:layout_toEndOf="@+id/item_house_collect_picture"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/item_house_collect_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="整套预定，单间预定"
+            android:layout_below="@+id/item_house_collect_price"
+            android:layout_toEndOf="@+id/item_house_collect_picture"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            />
+    </RelativeLayout>
+    </RelativeLayout>
+</com.yunyou.icloudinn.bookhouse.Ui.SlidingButtonView>

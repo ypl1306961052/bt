@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/book_person_item_picture"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:background="@color/black" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@color/green" />
+
+    <TextView
+        android:id="@+id/book_person_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我是书名"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/book_person_item_picture"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="13dp" />
+
+    <TextView
+        android:id="@+id/book_person_rent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="90个人租过"
+        android:layout_below="@+id/book_person_item_name"
+        android:layout_alignStart="@+id/book_person_item_name"
+        android:layout_marginTop="13dp" />
+
+    <TextView
+        android:id="@+id/book_person_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/green"
+        android:text="59条书评"
+        android:layout_below="@+id/book_person_rent"
+        android:layout_alignStart="@+id/book_person_rent" />
+
+    <TextView
+        android:id="@+id/book_person_renting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/green"
+        android:text="正被用户XX租阅"
+        android:layout_below="@+id/book_person_comment"
+        android:layout_alignStart="@+id/book_person_rent" />
+</RelativeLayout>

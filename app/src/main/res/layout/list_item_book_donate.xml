@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/grey1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        >
+    <TextView
+        android:id="@+id/book_donate_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="书籍名称"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        />
+        <EditText
+            android:id="@+id/book_donate_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/book_donate_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24字以内"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            />
+        <TextView
+            android:id="@+id/book_donate_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="书籍封面"
+            android:textColor="@color/black"
+            android:layout_below="@+id/book_donate_title"
+            android:layout_toStartOf="@+id/book_donate_title"
+            android:layout_marginTop="10dp"
+             />
+        <ImageView
+            android:id="@+id/donate_book_book_picture"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/book_donate_title"
+            android:layout_toEndOf="@+id/book_donate_picture"
+            android:visibility="gone"
+            />
+        <ImageView
+            android:id="@+id/donate_book_select_picture"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/book_donate_title"
+            android:layout_toEndOf="@+id/donate_book_book_picture"
+            android:background="@drawable/select_picture"
+            android:layout_marginStart="14dp" />
+    </RelativeLayout>
+
+</LinearLayout>

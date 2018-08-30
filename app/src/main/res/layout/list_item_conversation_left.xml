@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/conversation_head_img_my"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/layout_text"
+        android:background="@color/green"></ImageView>
+
+    <TextView
+        android:id="@+id/conversation_message_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="2017-10-12"/>
+<LinearLayout
+    android:id="@+id/layout_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_below="@+id/conversation_message_time"
+    android:layout_toRightOf="@+id/conversation_head_img_my">
+
+    <TextView
+        android:id="@+id/textView_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:maxLines="10"
+        android:background="@drawable/search_view_style"
+        android:padding="5dp"
+        android:text="说句话啊"/>
+
+
+</LinearLayout>
+    <TextView
+        android:id="@+id/message_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/layout_text"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/search_view_style"
+        android:layout_toRightOf="@+id/layout_text"
+        android:padding="3dp"
+        android:textSize="12sp"
+        android:textColor="@color/red"
+        android:visibility="invisible"
+        android:text="消息状态"/>
+</RelativeLayout>

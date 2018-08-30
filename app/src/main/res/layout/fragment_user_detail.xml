@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey1"
+    >
+    <include layout="@layout/top"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:paddingLeft="10dp">
+
+        <ImageView
+            android:id="@+id/user_detail_user_picutre"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="3dp"
+             />
+
+        <TextView
+            android:id="@+id/user_detail_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/user_detail_user_picutre"
+            android:text="王君相"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/user_detail_user_rent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_detail_user_name"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/user_detail_user_picutre"
+            android:text="租21本"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/user_detail_user_donate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_detail_user_rent"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/user_detail_user_picutre"
+            android:text="捐21本"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/user_detail_user_live_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_detail_user_donate"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/user_detail_user_picutre"
+            android:text="住进36家民宿"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/user_detail_attention_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="关注"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/green1"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/user_detail_picture_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="相册"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/right" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/grey1" />
+
+    <RelativeLayout
+        android:id="@+id/user_detail_rent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="租书"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/right" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/grey1" />
+
+    <RelativeLayout
+        android:id="@+id/user_detail_donate_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="10dp"
+        android:background="@color/white"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="捐书"
+            android:textSize="12sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"/>
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/right" />
+            />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/user_detail_send_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="发送消息"
+        android:textColor="@color/white"
+        android:background="@drawable/button_green_background"/>
+
+</LinearLayout>

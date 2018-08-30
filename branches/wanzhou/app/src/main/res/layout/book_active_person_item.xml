@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/active_person_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="昵称"
+        android:textColor="@color/black" />
+
+    <ImageView
+        android:id="@+id/active_person_picture"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/black"
+        android:layout_gravity="center_horizontal"
+        />
+    <TextView
+        android:id="@+id/active_person_rent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="租XX本书"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/active_person_donate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="捐XX本书"
+        android:textColor="@color/black"
+        />
+</LinearLayout>

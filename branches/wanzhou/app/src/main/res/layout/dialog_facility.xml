@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/boder_of_dialog"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:background="@drawable/boder_of_dialog"
+        >
+
+        <TextView
+            android:id="@+id/house_detail_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="房源描述"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/facility_list"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+
+        android:layout_below="@+id/house_detail_more"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey2" />
+
+    <Button
+        android:id="@+id/close_webview_dialog"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/white"
+        android:text="关闭"
+        android:textColor="@color/red" />
+
+</LinearLayout>

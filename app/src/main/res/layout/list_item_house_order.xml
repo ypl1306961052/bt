@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@color/white"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+        <ImageView
+            android:id="@+id/item_order_picture"
+            android:layout_width="140dp"
+            android:layout_height="120dp"
+            />
+        <RelativeLayout
+            android:id="@+id/door_house_order"
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:visibility="gone"
+            >
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:background="@drawable/translucent_background"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="一键开锁"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/item_order_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="花舍电影坊"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/item_order_picture"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            />
+        <TextView
+            
+            android:id="@+id/item_order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="状态：待消费"
+            android:textSize="12sp"
+            android:textColor="@color/green1"
+            android:layout_below="@+id/item_order_name"
+            android:layout_alignStart="@+id/item_order_name" />
+        <TextView
+            android:id="@+id/item_order_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下单时间：2017-6-30"
+            android:layout_below="@+id/item_order_status"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/item_order_picture" />
+
+        <TextView
+            android:id="@+id/item_order_live_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="入住时间：2017-6-30"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/item_order_time"
+            android:layout_toEndOf="@+id/item_order_picture" />
+        <TextView
+            android:id="@+id/item_order_left_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="离店时间：2017-6-30"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/item_order_live_time"
+            android:layout_toEndOf="@+id/item_order_picture" />
+        <TextView
+            android:id="@+id/item_order_total_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总价：￥100"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/item_order_left_time"
+            android:layout_toEndOf="@+id/item_order_picture" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey2"
+        android:layout_marginTop="10dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/wait_for_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="待付款"
+            android:textColor="@color/red" />
+
+        <RelativeLayout
+            android:id="@+id/item_order_cancel_order"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:layout_alignTop="@+id/item_order_pay"
+            android:layout_marginEnd="13dp"
+            android:layout_toStartOf="@+id/item_order_pay"
+            android:background="@drawable/boder_book_detail">
+
+            <TextView
+                android:id="@+id/order_status_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="取消订单"
+                android:textColor="@color/grey2" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/item_order_pay"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="14dp"
+            android:background="@drawable/boder_book_detail">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="付款"
+                android:textColor="@color/red" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

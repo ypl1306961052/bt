@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <include layout="@layout/top"/>
+
+   <FrameLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <LinearLayout
+           android:id="@+id/door_error"
+
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:orientation="vertical"
+           >
+
+           <ImageView
+               android:layout_width="100dp"
+               android:layout_height="100dp"
+               android:src="@mipmap/eero_launcher"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="开门失败"/>
+
+           <TextView
+               android:id="@+id/textView_door"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:text="主人，你是不是走错房了呀。。麻烦再扫一次"/>
+
+       </LinearLayout>
+       <LinearLayout
+           android:visibility="gone"
+           android:id="@+id/door_OK"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:orientation="vertical"
+           >
+           <ImageView
+               android:layout_width="100dp"
+               android:layout_height="100dp"
+               android:src="@mipmap/doorok_launcher"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="房正在打开中。。。"/>
+
+       </LinearLayout>
+   </FrameLayout>
+</LinearLayout>

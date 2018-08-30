@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="200dp">
+
+    <ImageView
+        android:id="@+id/write_book_picture"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"/>
+
+    <TextView
+        android:id="@+id/write_book_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="#00000000"
+        android:text="下雨天一个人在家"
+        android:textColor="@color/white"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignBottom="@+id/write_book_picture"
+        android:layout_alignStart="@+id/write_book_picture" />
+
+    <TextView
+        android:id="@+id/write_book_chapters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_alignTop="@+id/write_book_picture"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/write_book_name"
+        android:text="更新到第一章"
+        android:textColor="@color/mybrown" />
+
+    <TextView
+        android:id="@+id/write_book_detail"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/write_book_chapters"
+        android:layout_below="@+id/write_book_chapters"
+        android:text="一个人站在长窗下看雨"
+        android:textColor="@color/mybrown" />
+
+    <TextView
+        android:id="@+id/write_book_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="35dp"
+        android:layout_marginBottom="50dp"
+        android:autoLink="all"
+        android:visibility="gone"
+        android:text="@string/more"
+        android:textColor="@color/mybrown" />
+</RelativeLayout>

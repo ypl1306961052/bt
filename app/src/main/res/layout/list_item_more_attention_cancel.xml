@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/attention_more_layout"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@color/white">
+    <ImageView
+        android:id="@+id/more_attention_user_picutre"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="3dp"
+        android:layout_alignParentStart="true"
+        />
+    <TextView
+        android:id="@+id/more_attention_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="王君相"
+        android:textColor="@color/black"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/more_attention_user_picutre"
+        android:layout_marginStart="10dp" />
+    <TextView
+        android:id="@+id/more_attention_user_rent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="租21本"
+        android:textSize="12sp"
+        android:layout_below="@+id/more_attention_user_name"
+        android:layout_toEndOf="@+id/more_attention_user_picutre"
+        android:layout_marginStart="10dp" />
+    <TextView
+        android:id="@+id/more_attention_user_donate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="捐21本"
+        android:textSize="12sp"
+        android:layout_below="@+id/more_attention_user_rent"
+        android:layout_toEndOf="@+id/more_attention_user_picutre"
+        android:layout_marginStart="10dp" />
+    <TextView
+        android:id="@+id/more_attention_user_live_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="住进36家民宿"
+        android:textSize="12sp"
+        android:layout_below="@+id/more_attention_user_donate"
+        android:layout_toEndOf="@+id/more_attention_user_picutre"
+        android:layout_marginStart="10dp" />
+    <TextView
+        android:id="@+id/more_attention_attention_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消关注"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/grey"
+        android:textSize="16sp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        />
+</RelativeLayout>

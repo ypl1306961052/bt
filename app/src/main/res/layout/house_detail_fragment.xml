@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <ImageView
+        android:id="@+id/house_list_ltem_picture"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/white"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="￥790"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/house_list_ltem_price" />
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@color/red"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="23dp"
+        android:layout_marginTop="15dp" />
+    <TextView
+        android:id="@+id/house_list_ltem_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:text="我是xxxx民宿"
+        android:layout_below="@+id/house_list_ltem_picture"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="5dp" />
+    <TextView
+        android:id="@+id/house_list_ltem_recommend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="推荐理由：XXXXXXXXXXXXX"
+        android:layout_below="@+id/house_list_ltem_price"
+        android:layout_alignStart="@+id/house_list_ltem_price" />
+</RelativeLayout>

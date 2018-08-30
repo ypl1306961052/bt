@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey1"
+    >
+
+<include android:id="@+id/top" layout="@layout/top"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/book_donate_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+    <TextView
+        android:id="@+id/book_donate_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="添加捐书书籍"
+        android:layout_below="@+id/book_donate_list"
+        android:gravity="center"
+        android:textColor="@color/green1"
+        android:layout_marginTop="5dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/green1"
+        android:layout_alignParentBottom="true"
+        android:text="完成"
+        android:textColor="@color/white"
+        />
+</RelativeLayout>

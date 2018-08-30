@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <ImageView
+            android:id="@+id/conversation_list_head_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/head_img"/>
+
+        <TextView
+            android:id="@+id/conversation_list_use_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/conversation_list_head_image"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:text="用户名称"/>
+
+        <TextView
+            android:id="@+id/conversation_list_message_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="2017-10-12"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/conversation_list_message_text"
+            android:layout_below="@+id/conversation_list_use_name"
+            android:layout_alignLeft="@+id/conversation_list_use_name"
+            android:text="最新消息，只显示一行123154854521874854521842154445454544254145"
+            android:maxLines="1"
+            android:layout_marginEnd="100dp"
+            android:ellipsize="end"/>
+
+        <cn.bingoogolapple.badgeview.BGABadgeTextView
+            android:id="@+id/conversation_list_message_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignBaseline="@+id/conversation_list_message_text"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

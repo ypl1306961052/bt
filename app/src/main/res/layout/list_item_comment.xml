@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hedgehog="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginTop="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/comment_picture"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/default_picture" />
+
+        <TextView
+            android:id="@+id/comment_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户昵称"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_alignTop="@+id/comment_picture"
+            android:layout_toEndOf="@+id/comment_picture"
+            android:layout_marginStart="10dp" />
+
+        <TextView
+            android:id="@+id/comment_recommend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户推荐"
+            android:layout_below="@+id/comment_nickname"
+            android:textSize="12sp"
+            android:layout_toEndOf="@+id/comment_picture"
+            android:layout_marginStart="10dp" />
+
+        <com.hedgehog.ratingbar.RatingBar
+            android:id="@+id/ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            hedgehog:clickable="false"
+            hedgehog:halfstart="false"
+            hedgehog:starCount="5"
+            hedgehog:starEmpty="@mipmap/my_star_empty"
+            hedgehog:starFill="@mipmap/my_star_full"
+            hedgehog:starImageHeight="30dp"
+            hedgehog:starImageWidth="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/comment_recommend">
+
+        </com.hedgehog.ratingbar.RatingBar>
+        <TextView
+            android:id="@+id/comment_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="来自名宿的评价"
+            android:textSize="14sp"
+            android:textColor="@color/green"
+            android:layout_alignBaseline="@+id/comment_nickname"
+            android:layout_alignBottom="@+id/comment_nickname"
+            android:visibility="gone"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:id="@+id/comment_from_shopping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="来自民宿的评价"
+            android:textColor="@color/green1"
+            android:layout_alignBaseline="@+id/comment_nickname"
+            android:layout_alignBottom="@+id/comment_nickname"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/comment_describe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text="目的地安排的很满意，酒店非常好，既干净又卫生，花园泳池非常漂亮，酒店的服务也很到位，非常舒服的一次度假游。景点安排的也很好，基本上领略了巴厘岛的美景。阿勇漂流；海底漫步等即刺激又新奇，很不错的安排。客服的前期服务也很到位。这次出游很开心！ "
+        android:textColor="@color/black"
+        android:textSize="12sp"/>
+
+    <com.yunyou.icloudinn.bookhouse.Ui.MultiImageView
+        android:id="@+id/user_picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comment_describe"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="5dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/comment_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            android:text="2015-1-4"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/comment_follow_up"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/reply" />
+
+        <ImageView
+            android:id="@+id/comment_fever"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="30dp"
+            android:layout_toStartOf="@+id/comment_follow_up"
+            android:background="@drawable/thumb1" />
+
+        <TextView
+            android:id="@+id/comment_people_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/comment_follow_up"
+            android:text="3"
+            android:textSize="12sp" />
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="40dp"
+        android:background="@color/grey1"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/reply_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>

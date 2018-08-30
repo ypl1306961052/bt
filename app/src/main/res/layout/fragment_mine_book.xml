@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include android:id="@+id/top" layout="@layout/top"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mine_house_order_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey1"
+        android:layout_below="@+id/top"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+
+    <TextView
+        android:id="@+id/empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="你没有捐过书，快去捐书吧"
+        android:visibility="gone"
+        android:textColor="@color/green1"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>
